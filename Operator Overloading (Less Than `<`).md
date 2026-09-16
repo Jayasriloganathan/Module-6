@@ -26,6 +26,33 @@ To write a Python program that demonstrates **operator overloading** by overload
 
 ## 💻 Program
 
+````
+# Operator Overloading Example
+
+class A:
+    def __init__(self, a):
+        self.a = a
+
+    # Overloading < operator
+    def __lt__(self, o):
+        if self.a < o.a:
+            return "ob1 is less than ob2"
+        else:
+            return "ob2 is less than ob1"
+
+# Main Program
+ob1 = A(10)
+ob2 = A(20)
+
+print(ob1 < ob2)
+
+````
+
 ## Output
 
+<img width="513" height="171" alt="image" src="https://github.com/user-attachments/assets/88df2f97-3bc0-4265-b843-6d3ed6281986" />
+
+
 ## Result
+
+Thus, the Python program demonstrating operator overloading by overloading the less than (<) operator using the lt() method was successfully implemented.
